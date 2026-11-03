@@ -1,0 +1,251 @@
+// METODOS (FUNCOES)
+//
+// Metodo é um bloco de codigo que faz uma tarefa e podemos reutilizar.
+//
+// int Somar(int a, int b)
+// {
+//     return a + b;
+// }
+//
+// int -> Tipo de valor que vai retornar.
+// Somar -> Nome do metodo.
+// (int a, int b) -> Parametros que recebe.
+// return -> Devolve o resultado.
+// void -> Quando o metodo nao retorna nenhum valor.
+
+-------------------------------------------------------------------
+
+// ESTRUTURA DE UM METODO
+//
+// string Classificar(int minutos)
+//
+// string -> Tipo de dado que o metodo vai devolver.
+// Classificar -> Nome do metodo.
+// int -> Tipo de dado que o metodo recebe.
+// minutos -> Nome do parametro.
+//
+// PARAMETRO: Variavel que declaramos ao criar o metodo.
+// ARGUMENTO: Valor que enviamos quando chamamos o metodo.
+//
+// EXEMPLO:
+// string Classificar(int minutos)
+// {
+//     if (minutos <= 60)
+//     {
+//         return "Rotativa curta";
+//     }
+//     return "Rotativa padrao";
+// }
+//
+// string resultado = Classificar(30);
+//
+// O que aconteceu?
+//
+// 1. Chamamos o metodo Classificar(30).
+// 2. O numero 30 entra na variavel minutos.
+// 3. O metodo verifica se 30 é menor ou igual a 60.
+// 4. O return devolve o texto "Rotativa curta".
+// 5. A variavel resultado recebe esse texto.
+//
+// PARAMETRO -> int minutos (variavel que recebe).
+// ARGUMENTO -> 30 (valor que estamos enviando).
+// RETURN -> Devolve o resultado para quem chamou.
+//
+// COM DOIS PARAMETROS:
+//
+// double CalcularTarifa(int minutos, double valorHora)
+//
+// CalcularTarifa(90, 3.50);
+//
+// minutos recebe 90.
+// valorHora recebe 3.50.
+//
+// RESUMINDO:
+// Parametro é o que o metodo espera receber.
+// Argumento é o valor que enviamos para ele.
+// return é o que o metodo devolve depois de executar.
+
+-------------------------------------------------------------------
+
+// TIPOS DE RETORNO DOS METODOS EM C#
+//
+// O tipo antes do nome do metodo indica o que ele devolve.
+//
+// MAIS UTILIZADOS:
+//
+// void    -> Nao retorna nenhum valor.
+// int     -> Numero inteiro. Ex: 10
+// double  -> Numero decimal. Ex: 3.50
+// string  -> Texto. Ex: "Rotativa curta"
+// bool    -> Verdadeiro ou falso (true / false).
+// decimal -> Numero decimal, mais indicado para dinheiro.
+//
+// OUTROS TIPOS:
+//
+// float    -> Decimal com menor precisao. Ex: 3.5f
+// long     -> Numero inteiro grande. Ex: 3000000000L
+// char     -> Um caractere. Ex: 'A'
+// DateTime -> Data e hora. Ex: DateTime.Now
+// int[]    -> Array de inteiros. Ex: new int[] {1, 2, 3}
+// List<int> -> Lista de inteiros.
+// object   -> Pode guardar valores de varios tipos.
+//
+// EXEMPLOS DE METODOS:
+//
+// void MostrarMensagem()     -> Apenas executa.
+// int Somar()                -> Retorna um inteiro.
+// double CalcularTarifa()    -> Retorna um decimal.
+// string Classificar()       -> Retorna um texto.
+// bool Verificar()           -> Retorna true ou false.
+//
+// IMPORTANTE:
+//
+// Parametros -> Valores que o metodo recebe.
+// return     -> Valor que o metodo devolve.
+// void       -> Nao devolve nenhum valor.
+//
+// Podemos usar esses tipos tanto em variaveis
+// quanto em parametros e retornos de metodos.
+//
+// void -> O metodo nao devolve nenhum valor com return.
+// MostrarDuracao -> Nome do metodo.
+// int minutos -> Parametro que recebe os minutos.
+//
+// EXEMPLO: MostrarDuracao(87);
+//
+// void MostrarDuracao(int minutos)
+// {
+//     int horas = minutos / 60;
+//     // Divide 87 por 60, resultado = 1 hora.
+//
+//     int restantes = minutos % 60;
+//     // Pega o resto da divisao, resultado = 27 minutos.
+//
+//     Console.WriteLine($"{horas}h {restantes}min");
+//     // Mostra no terminal: 1h 27min
+// }
+//
+// RESUMINDO:
+// O metodo recebe 87, faz as contas e mostra 1h 27min.
+// Usamos void porque ele apenas imprime o resultado,
+// nao precisa devolver um valor para quem chamou.
+//
+// A diferença é que MOSTRAR não é a mesma coisa que RETORNAR.
+//
+// Console.WriteLine() -> Apenas mostra o resultado no terminal.
+// return -> Devolve um valor para quem chamou o metodo.
+//
+// COM VOID:
+//
+// void MostrarDuracao(int minutos)
+// {
+//     Console.WriteLine(minutos);
+// }
+//
+// MostrarDuracao(87); // Mostra 87 no terminal.
+//
+// COM RETURN:
+//
+// int ObterMinutos(int minutos)
+// {
+//     return minutos;
+// }
+//
+// int resultado = ObterMinutos(87); // Guarda 87 na variavel.
+//
+// RESUMINDO:
+// void -> Executa uma tarefa, mas nao devolve um valor.
+// return -> Permite usar o resultado em outra parte do codigo.
+
+-------------------------------------------------------------------
+
+// WHILE (TRUE)
+// Repete o codigo sem parar, ate encontrar um break
+// ou um return que encerre o metodo.
+
+-------------------------------------------------------------------
+
+// && (E)
+// Significa que as DUAS condições precisam ser verdadeiras.
+
+-------------------------------------------------------------------
+
+// if (!int.TryParse(Console.ReadLine(), out opcao))
+//
+// Console.ReadLine() -> Recebe o que o usuario digitou.
+// int.TryParse() -> Tenta transformar esse texto em numero inteiro.
+// out opcao -> Guarda o numero convertido na variavel opcao.
+// ! -> Inverte a resposta do TryParse.
+//
+// EXEMPLO:
+//
+// Digitou "5":
+// TryParse retorna true (conseguiu converter).
+// O ! transforma em false, então NAO entra no if.
+//
+// Digitou "abc":
+// TryParse retorna false (nao conseguiu converter).
+// O ! transforma em true, então ENTRA no if.
+//
+// RESUMINDO:
+// O if com !TryParse verifica se a conversao deu errado.
+//
+// Conversao deu errado significa que o C# tentou
+// transformar um texto em numero, mas nao conseguiu.
+//
+// Exemplo: Usuario digitou "abc".
+// O TryParse tenta transformar "abc" em int.
+// Mas "abc" nao é um numero, então retorna false.
+//
+// Se digitar "5", consegue converter e retorna true.
+//
+// Ou seja:
+// "5"   -> texto convertido para numero 5.
+// "abc" -> nao consegue converter para numero.
+//
+// O TryParse serve para verificar isso sem dar erro
+// e encerrar o programa.
+
+
+-------------------------------------------------------------------
+
+
+// TRYPARSE COM ! E SEM !
+//
+// O TryParse tenta converter um texto para numero.
+// Se conseguir retorna true, se nao conseguir retorna false.
+//
+// Exemplo: "5" consegue converter, mas "abc" nao consegue.
+//
+// O TryParse é diferente do int.Parse(), porque se o usuario
+// digitar algo invalido, ele retorna false em vez de gerar
+// uma exceção por erro de conversao.
+//
+// SEM !
+//
+// if (int.TryParse(entrada, out int numero))
+// {
+//     Console.WriteLine("Conseguiu converter");
+// }
+//
+// Se digitar "5" -> true -> ENTRA no if.
+// Se digitar "abc" -> false -> NAO entra no if.
+//
+// COM !
+//
+// if (!int.TryParse(entrada, out int numero))
+// {
+//     Console.WriteLine("Nao conseguiu converter");
+// }
+//
+// Se digitar "5" -> true vira false -> NAO entra no if.
+// Se digitar "abc" -> false vira true -> ENTRA no if.
+//
+// RESUMINDO:
+//
+// TryParse  -> SE conseguiu converter.
+// !TryParse -> SE NAO conseguiu converter.
+//
+// Usamos !TryParse quando queremos tratar o erro,
+// mostrando uma mensagem e pedindo outro valor,
+// sem precisar encerrar o programa.

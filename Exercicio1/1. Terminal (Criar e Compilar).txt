@@ -1,0 +1,36 @@
+Windows PowerShell 5.1
+Direitos Autorais (C) Microsoft Corporation. Todos os direitos reservados.
+
+PS C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio1> dotnet --version
+10.0.403
+PS C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio1> dotnet new console -n AmbienteEstacionamento
+O modelo "Aplicativo do Console" foi criado com êxito.
+
+Processando ações pós-criação...
+Restaurando C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio1\AmbienteEstacionamento\AmbienteEstacionamento.csproj:
+A restauração foi bem-sucedida.
+
+
+PS C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio1> dotnet run
+Não foi possível localizar um projeto para executar. Verifique se existe um projeto em C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio1 ou passe o caminho para o projeto usando --project.
+PS C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio1> ls
+
+
+    Diretório: C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02/11/2026     14:53                AmbienteEstacionamento
+-a----        02/11/2026     12:19            425 Sessão Terminal.txt
+
+
+PS C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio1> cd AmbienteEstacionamento
+PS C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio1\AmbienteEstacionamento> dotnet run
+Sistema operacional: Microsoft Windows NT 10.0.26300.0
+Versão do .NET: 10.0.14
+Diretório atual: C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio1\AmbienteEstacionamento
+
+Pressione qualquer tecla para sair...
+
+

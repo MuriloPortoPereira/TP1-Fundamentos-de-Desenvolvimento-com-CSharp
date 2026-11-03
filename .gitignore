@@ -1,0 +1,20 @@
+# Arquivos de compilação do .NET
+bin/
+obj/
+
+# Visual Studio e VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Arquivos compactados de entrega
+*.zip
+
+# Arquivos de sistema e temporários
+.DS_Store
+Thumbs.db
+*.log
+*.tmp

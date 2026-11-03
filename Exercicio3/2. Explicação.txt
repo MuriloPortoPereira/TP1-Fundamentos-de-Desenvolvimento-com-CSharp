@@ -1,0 +1,11 @@
+O SDK é basicamente um kit de ferramentas que usamos para criar e compilar nossos programas em C#, parecido com o JDK do Java. 
+
+Depois que escrevemos o codigo no Program.cs, o Roslyn (Compilador do C#) transforma ele em IL, que é parecido com o ByteCode do Java, e fica salvo no arquivo .dll.
+
+Quando executamos o programa, o CLR (parecido com a JVM) carrega esse arquivo e usa o JIT para transformar a IL em codigo de maquina.
+
+Temos tambem a BCL, que são bibliotecas prontas do .NET, como o Console.WriteLine e Environment que usamos no primeiro exercicio.
+
+Na compilação tambem são gerados outros arquivos, como o .pdb que ajuda no debug, o .deps.json que mostra as dependencias e o .runtimeconfig.json que informa qual versão do .NET precisamos.
+
+Então basicamente escrevemos o codigo, o Roslyn compila para IL, o CLR carrega, o JIT transforma em codigo de maquina e o programa é executado.

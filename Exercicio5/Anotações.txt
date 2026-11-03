@@ -1,0 +1,166 @@
+// O \n representa uma quebra de linha dentro de uma string.
+//
+// O que significa:
+// string? entrada = Console.ReadLine();
+//
+// string : Tipo de variável que armazena texto
+//
+// ? : Indica que a variável também pode receber null
+//
+//entrada : Nome da variável (camelCase)
+//
+// = : Atribui o resultado à variável
+//
+//Console.ReadLine() : Espera o usuario digitar um texto e apertar Enter
+//
+// O que significa:
+// if (int.TryParse(entrada, out int totalMinutos))
+//
+// "Consigo transformar o que o usuario digitou em um numero inteiro?"
+//
+// Se conseguir, retorna true. Se não conseguir, retorna false.
+//
+// int.TryParse()
+// É um método que tenta converter um texto para um numero inteiro (int), sem gerar erro de conversão caso o texto seja inválido.
+//
+// entrada :
+// É a variavel que guarda o texto digitado pelo usuario. Por exemplo, se ele digitou 87, a entrada contém "87" (texto).
+//
+// out int totalMinutos : 
+// O out permite que o método coloque o numero convertido dentro da variavel totalMinutos.
+// Se a conversão funcionar, essa variável vai receber 87 (numero inteiro).
+//
+//
+//
+// TRYParse - CONVERSAO DE DADOS NO C#
+//
+// O TryParse tenta converter um texto (string) para outro tipo de dado.
+// Se conseguir retorna true, se nao conseguir retorna false.
+//
+// ESTRUTURA:
+//
+// TIPO.TryParse(entrada, out TIPO variavel);
+//
+// TryParse -> Tenta fazer a conversao.
+// entrada  -> Variavel que contem o texto digitado.
+// out      -> Indica onde guardar o valor convertido.
+//
+// EXEMPLO:
+//
+// string entrada = "87";
+// int.TryParse(entrada, out int totalMinutos);
+//
+// Nesse caso o texto "87" sera convertido para o numero 87.
+//
+// ---------------------------------------------------------
+// PRINCIPAIS TIPOS DE CONVERSAO
+// ---------------------------------------------------------
+//
+// 1. STRING PARA INT (Numero inteiro)
+//
+// int.TryParse(entrada, out int minutos);
+//
+// Exemplo: "87" -> 87
+//
+//
+// 2. STRING PARA DOUBLE (Numero decimal)
+//
+// double.TryParse(entrada, out double valorHora);
+//
+// Exemplo: "3,50" -> 3,5
+//
+//
+// 3. STRING PARA DECIMAL (Valores monetarios)
+//
+// decimal.TryParse(entrada, out decimal tarifa);
+//
+// Exemplo: "12,50" -> 12,50
+//
+// O decimal é mais indicado para dinheiro que o double.
+//
+//
+// 4. STRING PARA BOOL (Verdadeiro ou falso)
+//
+// bool.TryParse(entrada, out bool ativo);
+//
+// Exemplo: "true" -> true
+//          "false" -> false
+//
+// OBS: Nao reconhece diretamente "sim" ou "nao".
+//
+//
+// 5. STRING PARA DATETIME (Data e hora)
+//
+// DateTime.TryParse(entrada, out DateTime data);
+//
+// Exemplo: "02/11/2026" -> uma data
+//
+//
+// 6. STRING PARA LONG (Numero inteiro maior)
+//
+// long.TryParse(entrada, out long numero);
+//
+// Exemplo: "3000000000" -> 3000000000
+//
+//
+// OBS: Valores decimais e datas podem depender
+// da configuracao regional do sistema.
+//
+// ---------------------------------------------------------
+// DIFERENCA ENTRE PARSE, CONVERT E TRYPARSE
+// ---------------------------------------------------------
+//
+// int.Parse(entrada);
+// Converte texto em numero inteiro.
+// Se digitar algo invalido pode gerar uma excecao.
+//
+// Convert.ToInt32(entrada);
+// Tambem converte para inteiro.
+// Se o texto for invalido pode gerar uma excecao.
+//
+// int.TryParse(entrada, out int numero);
+// Tenta converter para inteiro.
+// Se nao conseguir retorna false, sem gerar
+// excecao por formato invalido.
+//
+// ---------------------------------------------------------
+// EXEMPLO COM IF E TRYPARSE
+// ---------------------------------------------------------
+//
+// string? entrada = Console.ReadLine();
+//
+// if (int.TryParse(entrada, out int totalMinutos))
+// {
+//     Console.WriteLine($"Numero convertido: {totalMinutos}");
+// }
+// else
+// {
+//     Console.WriteLine("Digite um numero valido");
+// }
+//
+// ---------------------------------------------------------
+// RESUMINDO
+// ---------------------------------------------------------
+//
+// ReadLine() -> Recebe o texto digitado pelo usuario.
+//
+// TryParse() -> Tenta converter esse texto para outro tipo.
+//
+// out -> Guarda o valor convertido na variavel indicada.
+//
+// true -> A conversao funcionou.
+//
+// false -> A conversao nao funcionou.
+//
+// Mesmo se a conversao falhar, o out recebe o valor
+// padrao do tipo. Para int, por exemplo, sera 0.
+//
+// IMPORTANTE:
+//
+// O TryParse verifica se a conversao foi possivel.
+// Ele nao verifica se o valor faz sentido para o programa.
+//
+// Exemplo: "-10" pode ser convertido para int,
+// mas no estacionamento precisamos verificar se
+// o tempo informado é negativo.
+//

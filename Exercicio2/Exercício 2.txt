@@ -1,0 +1,6 @@
+O C# funciona parecido com o Java. Escrevemos um codigo em C# e o compilador transforma ele em IL (Liguaguem Intermediaria - Analogo ao ByteCode), isso permite
+que o CLR (Analogo a JVM do Java), seja responsavel por executar o programa. Na hora da execução, o CLR usa o JIT que transforma a IL em codigo de maquina.
+
+Dessa maneira o mesmo programa pode rodar em diferentes sistemas, pois a IL não depende diretamente do sistema operacional, e o JIT faz a compilação para cada ambiente.
+
+Só será necessario uma versao de .NET compativel para executar (Analogo ao JRE).

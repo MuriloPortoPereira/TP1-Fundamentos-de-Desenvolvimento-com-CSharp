@@ -1,0 +1,68 @@
+Windows PowerShell 5.1
+Direitos Autorais (C) Microsoft Corporation. Todos os direitos reservados.
+
+PS C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio3\AmbienteEstacionamento> dotnet build
+Restauração concluída (0,4s)
+  AmbienteEstacionamento net10.0 êxito (1,9s) → bin\Debug\net10.0\AmbienteEstacionamento.dll
+
+Construir êxito em 2,9s
+PS C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio3\AmbienteEstacionamento> ls
+
+
+    Diretório: C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com
+    CSharp\Exercicio3\AmbienteEstacionamento
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02/11/2026     15:12                bin
+d-----        02/11/2026     15:13                obj
+-a----        02/11/2026     14:53            253 AmbienteEstacionamento.csproj
+-a----        02/11/2026     14:53            314 Program.cs
+
+
+PS C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio3\AmbienteEstacionamento> cd bin
+PS C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio3\AmbienteEstacionamento\bin> ls
+
+
+    Diretório: C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com
+    CSharp\Exercicio3\AmbienteEstacionamento\bin
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02/11/2026     15:12                Debug
+
+
+PS C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio3\AmbienteEstacionamento\bin> cd Debug
+PS C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio3\AmbienteEstacionamento\bin\Debug> ls
+
+
+    Diretório: C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com
+    CSharp\Exercicio3\AmbienteEstacionamento\bin\Debug
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02/11/2026     15:13                net10.0
+
+
+PS C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio3\AmbienteEstacionamento\bin\Debug> cd net10.0
+PS C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio3\AmbienteEstacionamento\bin\Debug\net10.0> ls
+
+
+    Diretório: C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com
+    CSharp\Exercicio3\AmbienteEstacionamento\bin\Debug\net10.0
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        02/11/2026     15:13            460 AmbienteEstacionamento.deps.json
+-a----        02/11/2026     15:13           5632 AmbienteEstacionamento.dll
+-a----        02/11/2026     15:13         162304 AmbienteEstacionamento.exe
+-a----        02/11/2026     15:13          10964 AmbienteEstacionamento.pdb
+-a----        02/11/2026     15:13            270 AmbienteEstacionamento.runtimeconfig.json
+
+
+PS C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio3\AmbienteEstacionamento\bin\Debug\net10.0>
+

@@ -1,0 +1,96 @@
+// do 
+// { 
+//
+// } while (opção != 5)
+
+A ideia desse trecho é referente a "Em quanto for diferente de 5, continue o loop"
+
+--------------------------------------------------------------------------------------
+
+//  if (!int.TryParse(Console.ReadLine(), out opcao))
+//  {
+//     Console.WriteLine("Opcao invalida!");
+//     continue;
+//  }
+
+- if verifica se a condicao é verdadeira
+- ! inverte o resultado do TryParse
+- TryParse tenta converter o que foi digitado em numero inteiro
+- out opcao guarda o numero convertido na variavel opcao
+
+if (!int.TryParse(Console.ReadLine(), out opcao))
+{
+    // Se a conversao falhar, mostra a mensagem
+    Console.WriteLine("Opcao invalida!");
+
+    // Pula o restante do codigo e volta para o inicio do loop
+    continue;
+}
+
+Então fica assim. (Entrada que vai ser analisada, Oque deve ser retornado / saida)
+Ai fica !tipo.TryParse
+
+O TryParse ve se e verdadeiro padrao, mas com ! ele fica invertido. Ai se for int, ele continua. Caso nao seja ele continua o programa (Fluxo do Codigo). Mas ele acaba ainda
+Dando Continue (Ele nao quebra, apenas retorna a saida opcao "Recomeca")
+
+--------------------------------------------------------------------------------------
+
+Swith Case
+Inicia como switch (opcao), a opcao a variavel que sera a seletora. 
+
+Com isso a estrtura é 
+
+switch(variavel)
+{
+case 1:
+	{
+	
+	}
+case 2:
+	{
+
+	}
+default:
+	{
+	// default executa se nenhuma opcao corresponder.
+	// Semelhante ao if e Else.
+	}
+}
+
+
+--------------------------------------------------------------------------------------
+
+métodos em C# (Equivalente a Funcao em Python)
+
+// Tipo de retorno Nome (Parametros)
+int LerMinutos()
+{
+    // Codigo que o metodo executa
+}
+
+--------------------------------------------------------------------------------------
+
+ while (true)
+    { 
+    // Quando iniciamos um while e colocamos no argumento o (true)
+    // Ele entende que em quanto for verdadeiro o loop, precisa ser contiuo.
+    // então basicamente vai ser repetido. Mas no código feito tem um Return que 
+    // que retorna o valor de minutos, caso a entrada do usuário não seja int, 
+    // vai ser a saída sera digite um numero valido. Como são apenas duas foi omitido,
+    // o else if ou else e já foi inserido a linha seguinte direto.
+    }
+
+--------------------------------------------------------------------------------------
+
+Para formatar igual o numero de casas decimais usa-se {nome_da_variavel:F2} 
+
+Sendo F de formatar e depois o numero de casas decimais
+
+Vem logo depois do nome variável : dois pontos F Numero de casas.
+
+
+--------------------------------------------------------------------------------------
+
+Os métodos são atributos a variáveis declaradas. 
+
+

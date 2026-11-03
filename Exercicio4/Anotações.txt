@@ -1,0 +1,105 @@
+// Console. : Representa o Console
+//
+// Para usar as funções do console, chamar como metodo. 
+// Console.WriteLine($ "Insira seu texto aqui e {Sua Variavel aqui!}")
+//
+// .WriteLine() : Escreve a informação ("Print")
+//
+// .ReadKey() : Espera a ação de input do usuario. Seria leia a tecla do usuario
+// Como não tem nada alem do programa, esse comando acaba deixando o programa congelado.
+//
+// $ : Permite colocar variaveis dentro do texto (Analogo ao "f-string")
+//     Vem antes das aspas duplas e dentro dos parenteses
+//     ($ "                                             ")
+//
+// "   " : Demilita o texto
+//
+// {   } : Pega o Valor da Variavel
+//
+// Sempre colcoar no final " ; ". 
+//
+// O ponto e virgula indica o fim da instrução
+
+
+// Então sempre se inicia com o "if" e logo em seguida com as condições dentro dos Parenteses ("Condição")
+//
+// Funciona assim, se a condição for verdadeira executa o codigo que esta dentro das {chaves}
+//
+// if (Condição)
+// {
+//   Se a condição for vendadeira o codigo dentro das chaves é acionado.
+// }
+// else if (Condição 2)
+// {
+//   Se a condição for vendadeira o codigo dentro das chaves é acionado.
+// }
+// else
+// {
+//   Se a condição for vendadeira o codigo dentro das chaves é acionado.
+// }
+//
+// Podemos fazer da seguinte maneira:
+//
+// 1. Apenas if:
+// Se for falso, não vai ser executado.
+//
+// if (minutos > 60)
+// {
+//  Console.WriteLine($"O Valor será {valorTotal}")
+// }
+//
+//
+// 2. if e else:
+// Um dos blocos será executado.
+//
+// if (minutos > 60)
+// {
+//  Console.WriteLine($"O Valor ficara em {Valor X}")
+// }
+// else
+// {
+//  Console.WriteLine($"O Valor ficara em {Valor Y}")
+// }
+//
+// 3. if + else if:
+// Se nenhuma estrutura for verdadeira, nenhum bloco sera executado.
+//
+//  if (minutos > 120)
+// {
+//     Console.WriteLine("Diaria");
+// }
+// else if (minutos > 60)
+// {
+//     Console.WriteLine("Rotativa padrao");
+// }
+//
+// 4. if + else if + else: 
+// Aqui tem tres possibilidade e apenas uma sera executada.
+//
+// if (minutos > 120)
+// {
+//     Console.WriteLine("Diaria");
+// }
+// else if (minutos > 60)
+// {
+//     Console.WriteLine("Rotativa padrao");
+// }
+// else
+// {
+//     Console.WriteLine("Rotativa curta");
+// }
+//
+// 5. Caso precise de mais opções e possibilidades, pode colocar mais else if, entre o if e else.
+
+
+// PADROES DE ESCRITA NO C#
+//
+// Variaveis locais  -> camelCase       -> totalMinutos
+// Parametros        -> camelCase       -> valorHora
+// Classes           -> PascalCase      -> CalculadoraTarifa
+// Metodos           -> PascalCase      -> CalcularTarifa()
+// Propriedades      -> PascalCase      -> ValorTotal
+// Constantes        -> PascalCase      -> TetoDiario
+// Campos privados   -> _camelCase      -> _totalMinutos
+// Interfaces        -> I + PascalCase  -> ICalculadoraTarifa
+// Namespaces        -> PascalCase      -> SistemaEstacionamento

@@ -1,0 +1,11 @@
+Sistema operacional: Microsoft Windows NT 10.0.26300.0
+Versão do .NET: 10.0.14
+Diretório atual: C:\Users\Aluno\OneDrive\Desktop\TP1 - Fundamentos de Desenvolvimento com CSharp\Exercicio1\AmbienteEstacionamento\bin\Debug\net10.0
+
+Pressione qualquer tecla para sair...
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+// EXERCICIO 6 - ANOTACOES
+
+// WHILE: Repete o codigo enquanto a condição for verdadeira.
+//
+// while (condicao)
+// {
+//     Codigo que sera repetido.
+// }
+
+// WHILE (TRUE): Repete sem parar ate encontrar um break.
+
+// SENTINELA: Valor escolhido para encerrar o programa.
+
+// BREAK: Encerra o while e continua depois dele.
+// if (totalMinutos == -1)
+// {
+//     break;
+// }
+
+// CONTINUE: Pula o resto da repetição e volta ao inicio.
+// if (totalMinutos < 0)
+// {
+//     continue;
+// }
+
+// CONTADORES: Variaveis que contam quantas vezes algo aconteceu.
+// int rotativaCurta = 0;
+// int rotativaPadrao = 0;
+// int diaria = 0;
+
+// ++ : Soma 1 na variavel.
+// contador++;
+
+// -- : Diminui 1 na variavel.
+// contador--;
+
+
+// if (!int.TryParse(entrada, out int minutos))
+// {
+//     continue;
+// }
+// 
+// O TryParse tenta converter um texto em numero e responde true ou false.
+//
+// O ! significa NÃO e inverte essa resposta.
+
+// Sobre o Try Parse:
+//
+// Try = Tentar
+// Parse = Converter ou interpretar
+//
+// Então, int.TryParse() pode ser entendido como "Tentar converter para número inteiro".
+// 
+// Já !int.TryParse() seria "Não conseguiu converter para número inteiro?"
+
+// TRYPARSE - CONVERSAO DE TEXTO PARA NUMERO
+//
+// O TryParse tenta transformar um texto em numero.
+// Por exemplo, "90" é um texto e 90 é um numero inteiro.
+//
+// string entrada = "90";
+//
+// bool conseguiu = int.TryParse(entrada, out int minutos);
+//
+// int       -> Tipo que queremos converter (numero inteiro).
+// TryParse  -> Tenta fazer a conversao.
+// entrada   -> Texto que queremos converter.
+// out       -> Indica onde guardar o resultado convertido.
+// minutos   -> Variavel que recebe o numero.
+// conseguiu -> Recebe true ou false.
+//
+// Se entrada = "90":
+// Retorna true e guarda 90 na variavel minutos.
+//
+// Se entrada = "abc":
+// Retorna false e a variavel minutos recebe 0.
+//
+// RESUMINDO:
+// TryParse tenta converter e responde se conseguiu.
+// out guarda o valor convertido.
+// O retorno true ou false indica se deu certo ou nao.
+
+
